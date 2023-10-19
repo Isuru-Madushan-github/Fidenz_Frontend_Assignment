@@ -13,15 +13,8 @@ const CardContainer = ({idList}) => {
     const [loading,setLoading]=useState(true)
 
     let expiration=new Date()
-    console.log(expiration)
     expiration.setTime(expiration.getTime()+(1000*5*60))
     expiration=expiration.toUTCString()
-
-    // var now = new Date();
-    // var time = now.getTime();
-    // var expireTime = time + 1000*36000;
-    // now.setTime(expireTime);
-    // console.log(now)
 
     const apiKey='e22e0660736a1909866a43f40022af84'
 
@@ -55,9 +48,6 @@ const CardContainer = ({idList}) => {
                 id.length>0 ? setCityList(id) : setError("Failed to fetch data")
                 
             }else{
-                // if(idList.length>1){
-                //     console.log('yes')
-                // }
                 const listCount=(JSON.parse(Cookies.get('weatherList'))).length
 
                 if(listCount===1){

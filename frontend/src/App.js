@@ -18,7 +18,7 @@ function App() {
             <Header />
 
             <Routes>
-              <Route path="/" element={<Dashboard title={'Dashboard - Fidenz Technology'}/>} title={'sdsd'}></Route>
+              <Route path="/" element={<Dashboard title={'Dashboard - Fidenz Technology'}/>}></Route>
               <Route path="/view/:id" element={<ViewCity title={'City - Fidenz Technology'}/>}></Route>
             </Routes>
 
