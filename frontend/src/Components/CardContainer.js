@@ -23,7 +23,7 @@ const CardContainer = ({idList}) => {
     useEffect(()=>{
 
         const getData=()=>{
-            console.log('function runninf')
+            
             axios.get(url).then((res)=>{
                 if(!res.status===200){
                     throw new Error("Failed to fetch data")
