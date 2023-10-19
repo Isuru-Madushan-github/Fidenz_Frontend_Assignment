@@ -1,0 +1,13 @@
+.header .header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .header-wrapper h2{
+    font-weight: 500;
+}
+.header .header-wrapper img{
+    width: 40px;
+    height: 35px;
+    margin-right: .8rem;
+}
